@@ -1,0 +1,21 @@
+@charset "UTF-8"; 
+<style>
+body{
+    background-color: darksalmon;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: rgb(197, 110, 69);
+    font-size: 40px;
+    text-decoration: underline;
+}
+h2{
+    color: chocolate;
+    font-size: 30px;
+}
+p{
+    color: black;
+    font-size: 20px;
+}
+</style>
