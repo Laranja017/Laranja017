@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Laranja017
+- 👋 Hi, I’m Aline Júlia
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning Eng Software 
 - 💞️ I’m looking to collaborate on Companies
