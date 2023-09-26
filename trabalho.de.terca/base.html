@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/faivicon.jpg" type="image/x-icon"><!--aquele trequinho lá encima-->
+    <title>Base</title>
+    <link rel="stylesheet" href="style.css"><!--stilo na outra pág-->
+    <style></style>
+</head>
+<body>
+    <h1>Titulo </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde asperiores nihil quisquam quod aut ea fuga beatae cumque, distinctio nostrum deleniti amet quam praesentium enim, voluptatum quibusdam nesciunt iste.</p>
+
+    <h2>Sub titulo 1</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad autem iusto soluta accusantium reiciendis eos tenetur amet nulla pariatur voluptas alias, minima mollitia, quidem sint voluptatem! Officia eum molestiae unde!</p>
+
+    <h3>Titulo de Topicos</h3><!--sub titulo tbm, o h4 tbm-->
+    <p>Tipo 1</p>
+        <ol type="I"><!--type-->
+        <li>UM</li>
+        <li>DOIS</li>
+    </ol>
+
+    <p>Tipo 2</p>
+    <ul type="square"><!--disc ; circle ; square ; ele não vai dar as opcoes -->
+        <li>ONE</li>
+        <li>TWO</li>
+    </ul>
+
+    <h4>Titulo de Audio</h4>
+    <p>Vamos aprender a reproduzir áudios em </p>
+    <audio src="audio/loreen.tattoo.mp3" controls autoplay></audio>
+    <!--Geito simples-->
+
+    <h5>Titulo de Link</h5>
+    <p>A tag é a. ---- <a href="https://www.youtube.com/watch?v=UVmblu8wuKU&list=RDUVmblu8wuKU&start_radio=1">não esqueca de colocar algo aqui</a></p>
+
+    <p>Temos a segunda parte <a href="pag002.html" rel="next">tbm</a></p>
+    <!--Para literalmente para a segunda pag, e a mesma coisa para mais págs-->
+
+    <h6>Titulo de Imagens/ Video</h6>
+    <picture> <!--varios despositivos de varios tamanho-->
+        <source media="(max-width: 750px)" srcset="imagens/p.jpg" type="image/jpg" width="500">
+        <source media="(max-width: 1050px)" srcset="imagens/m.jpg" type="image/jpg" width="500">
+        <img src="imagens/g.jpg" alt="imagem grande" width="500">
+    </picture>
+
+    <video width="500" poster="coloque aqui" controls autoplay loop><!--coloque como sempre img-->
+        <source src="video/meu.video.mp4" type="video/mp4">
+        <p>seu navegador não tem capacidade de videos</p>
+    </video><!--Geito pesado pra karalho-->
+
+</body><!--Emmet:wrap with abbreviation, instale e facilite a sua vida-->
+</html>

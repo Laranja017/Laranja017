@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+}
+h1{
+    color: aliceblue;
+}
+h2{
+    color: aliceblue;
+}
+h3{
+    color: aliceblue;
+}
+h4{
+    color: aliceblue;
+}
+h5{
+    color: aliceblue;
+}
+h6{
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+li{
+    color: aliceblue;
+}
+ol{
+    color: aliceblue;
+}
+a{
+    color: aqua;
+}
