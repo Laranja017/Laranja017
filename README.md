@@ -1,5 +1,0 @@
-- 👋 Hi, I’m Aline Júlia
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning Eng Software 
-- 💞️ I’m looking to collaborate on Companies
-- 📫 How to reach me alinelasneau@gmail.com
