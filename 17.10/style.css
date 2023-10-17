@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+
+body {
+    background-image: linear-gradient(to rigth, #b66eaa, #cf4eba);
+    font-family: 'Young Serif', serif;
+    margin: 100;
+    padding: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#app {
+    text-align: center;
+}
