@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres</title>
+    <style>
+        body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: linear-gradient(to right, rgb(190, 121, 160), rgb(184, 86, 141), rgb(177, 48, 121));        
+        }
+    
+        textarea {
+            height: 100px;
+            width: 100%;
+        }
+
+        #contador {
+            margin-top: 10px;
+        }
+
+        main {
+            background-color: rgb(151, 68, 115);
+            border-radius: 5%;
+            box-shadow: 10px 10px 10px black;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+        }
+
+        #relogio {
+            position: absolute; 
+            top: 10px; 
+            left: 10px; 
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div>
+        <h1>Contador de Caracteres</h1>
+        <textarea id="texto" oninput="contarCaracteres()"></textarea>
+        <p id="contador">0 caracteres</p>
+    </div>
+
+    <div id="relogio"></div>
+
+    <script>
+        function contarCaracteres() {
+            var texto = document.getElementById('texto').value;
+            var contador = document.getElementById('contador');
+            contador.innerHTML = texto.length + ' caracteres';
+        }
+
+        function atualizarRelogio() {
+            var agora = new Date();
+            var horas = agora.getHours();
+            var minutos = agora.getMinutes();
+            var segundos = agora.getSeconds();
+
+            horas = horas < 10 ? '0' + horas : horas;
+            minutos = minutos < 10 ? '0' + minutos : minutos;
+            segundos = segundos < 10 ? '0' + segundos : segundos;
+
+            document.getElementById('relogio').textContent = horas + ':' + minutos + ':' + segundos;
+        }
+
+        setInterval(atualizarRelogio, 1000);
+
+        atualizarRelogio();
+    </script>
+    </main>
+</body>
+</html>

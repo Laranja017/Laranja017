@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to right, rgb(190, 121, 160), rgb(184, 86, 141), rgb(177, 48, 121));        
+        }
+        #relogio {
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div id="relogio"></div>
+
+    <script>
+        function atualizarRelogio() {
+            var agora = new Date();
+            var horas = agora.getHours();
+            var minutos = agora.getMinutes();
+            var segundos = agora.getSeconds();
+
+            horas = horas < 10 ? '0' + horas : horas;
+            minutos = minutos < 10 ? '0' + minutos : minutos;
+            segundos = segundos < 10 ? '0' + segundos : segundos;
+
+            document.getElementById('relogio').textContent = horas + ':' + minutos + ':' + segundos;
+        }
+
+        setInterval(atualizarRelogio, 1000);
+
+        atualizarRelogio();
+    </script>
+</body>
+</html>
