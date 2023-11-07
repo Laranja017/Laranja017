@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-image: linear-gradient(to right, rgb(126, 86, 109), rgb(52, 17, 37), rgb(35, 6, 23));        
+}
+
+.question {
+    margin-bottom: 30px;
+}
+
+.answers label {
+    display: block;
+    margin-top: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
